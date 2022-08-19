@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programinha</title>
+    <style> 
+        body {
+            background-color: black;
+            font: normal 20pt Times normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultados das Contas</h1>
+    <p>Ufa vou aprender JavaScript</p>
+    <script>
+        var num1 = window.prompt('Digite um número: ')
+        var num2 = window.prompt('Digite outro número: ')
+        var s1 = Number(num1) + Number(num2)
+        window.alert('O resutado é ' + s1)
+        var sub1 = window.prompt('Digite um número para subtrair: ')
+        var sub2 = window.prompt('Digite outro número para subtrair: ')
+        var s2 = Number(sub1) - Number(sub2)
+        window.alert('O resutado é ' + s2)
+        var mult = window.prompt('Quer multiplicar? Digite 1 senão digite 2')
+        if (mult == 1) {
+            var mult1 = window.prompt('Digite um número Para Multiplicar: ')
+            var mult2 = window.prompt('Digite outro número para Multiplicar: ')
+            var s = Number(mult1) * Number(mult2)
+            window.alert('O resultado é '+ s)
+            document.write(`O primeiro número da da adição foi ${num1} o segundo foi ${num2} e o resultado foi ${s1}. O primeiro número da multiplicação foi ${mult1} o segundo foi ${mult2} e o resultado foi ${s}`)
+        }
+        window.alert('Ok fique com o site')
+        
+    </script>
+</body>
+</html>
