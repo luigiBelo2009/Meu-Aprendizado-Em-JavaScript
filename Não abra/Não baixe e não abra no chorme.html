@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIA IMEDIATAMENTE</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>NÃO CLIQUE</h1>
+    <div id="area">
+        NÃO CLIQUE AQUI
+    </div>
+    <audio src="coin.mp3"></audio>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar()
+        {
+            
+            const audio = document.querySelector('audio')
+            audio.currentTime = 0
+            audio.play()
+            a.innerText = 'Não clique novamente, você está avisado'
+            a.style.background ='red'
+            
+        }
+        
+        function entrar()
+        {
+            a.innerText = 'NÃO CLIQUE'
+        }
+        function sair()
+        {
+            a.innerText = 'NÃO CLIQUE AQUI'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIA IMEDIATAMENTE</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>NÃO CLIQUE</h1>
+    <div id="area">
+        NÃO CLIQUE AQUI
+    </div>
+    <audio src="coin.mp3"></audio>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar()
+        {
+            
+            const audio = document.querySelector('audio')
+            audio.currentTime = 0
+            audio.play()
+            a.innerText = 'Clicou'
+            a.style.background ='red'
+            
+        }
+        
+        function entrar()
+        {
+            a.innerText = 'NÃO CLIQUE'
+        }
+        function sair()
+        {
+            a.innerText = 'NÃO CLIQUE AQUI'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+>>>>>>> 4791edb399250a5f95523ec15f18c644dd7c6653
+</html>
